@@ -1,0 +1,9 @@
+{% extends "base.xhtml" %}
+{% block content %}
+<div id="container-d">
+  {{ section.content | split(pat="<!-- section -->") | first | safe }}
+</div>
+<div id="container-e">
+  {{ section.content | split(pat="<!-- section -->") | last | safe }}
+</div>
+{% endblock content %}

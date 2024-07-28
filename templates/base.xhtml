@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd" xml:lang="en">
+	<head>
+    <title>Chaox - {{section.title}}</title>
+		<link rel="stylesheet" href="main.css"/>
+		<meta charset="UTF-8"/>
+		<!-- cool metadata goes here c: -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	<body>
+		<div id="container-a">
+      <nav>
+        <li id="nav-a">
+          <a id="nav-b" href="/">Home</a>
+          <a id="nav-b" href="/services">Services</a>
+          <a id="nav-b" href="/about">About</a>
+        </li>
+      </nav>
+            <!-- Chaox logo -->
+			<div id="container-b"></div>
+			<div id="container-c">
+                {% block content %} {% endblock %}
+            </div>
+			<footer>
+				2022 Chaox Operations | <a xmlns="http://www.w3.org/1999/xhtml" href="privacy.xhtml">Privacy Policy</a>
+			</footer>
+		</div>
+	</body>
+</html>

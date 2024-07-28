@@ -1,0 +1,136 @@
+	$background:		#11111b;
+	$container:		#1e1e2e;
+	$container-alt:	#181825; /* unused */
+	$text:			#cdd6f4;
+	$link:			#94e2d5;
+	$highlight:		#b4befe;
+	$highlight-text:	#11111b;
+
+::selection {
+	background-color:	$highlight;
+	color:			$highlight-text;
+}
+
+* {
+	font-family: sans-serif;
+}
+
+body {
+	background-color:	$background;
+}
+
+#container-a {
+	max-width: 		50vw;
+	display: 		grid;
+	margin: 		auto;
+}
+
+nav {
+	margin:			0px;
+	margin-bottom:		10px;
+	text-align:		center;
+	background-color:	$container;
+}
+
+#nav-a {
+	display:		inline-block;
+	padding-inline:		1vw;
+}
+
+#nav-b {
+	text-decoration: 	none;
+	color:			$text;
+	font-size:		14px;
+	background-color:	$container;
+}
+
+#container-b {
+	background-color: 	#0000;
+	background-image: 	url('img/chaox-banner-fp.svg');
+
+	height: 		10.5vw;
+	margin: 		0px;
+	margin-bottom: 		10px;
+	background-position: 	50% 39%;
+	background-size: 	cover;
+}
+
+#container-c {
+	padding:		0px;
+	margin:			0px;
+	display:		flex;
+}
+
+#container-d {
+	width:			100%;
+	margin:			0px;
+	margin-bottom:		10px;
+	margin-right:		10px;
+	padding-inline:		30px;
+	padding-bottom:		5px;
+	color:			$text;
+	background-color:	$container;
+}
+
+h1 {
+	font-size:		21px;
+}
+
+h2 {
+	font-size:		19px;
+}
+
+h3 {
+	font-size:		16px;
+}
+
+p {
+	font-size:		14px;
+}
+
+a {
+	font-weight:		bold;
+	color:			$link;
+}
+
+ul {
+	font-size:		14px;
+}
+
+#container-e {
+	width:			130px;
+	margin:			0px;
+	margin-bottom:		10px;
+	padding-inline:		30px;
+	padding-block:		10px;
+	color:			$text;
+	background-color:	$container;
+	text-align:		center;
+	display:		grid;
+	margin-inline:		auto;
+}
+
+@media only screen and (max-width: 800px) {
+	#container-c {
+		flex-wrap: 		wrap;
+	}
+
+	#container-d {
+		margin-right:		0px;
+	}
+
+	#container-e {
+		width: 			100%;
+		display:		inline;
+
+	}
+}
+
+footer {
+	margin:			0px;
+	padding-inline:		30px;
+	padding-bottom:		5px;
+	color:			$text;
+	background-color:	$container;
+	text-align:		center;
+}
